@@ -6,7 +6,7 @@ class Users::SessionsController < Devise::SessionsController
     user = User.find_by(name: params[:user][:name])
 
     if user.present? && user.valid_password?(params[:user][:password])
-      sign_in(user) # This will set up the session for the user
+      sign_in(user)
       token = JWT.encode({ sub: user.id, jti: user.jti },
                          Rails.application.credentials.devise_jwt_secret_key!)
 
