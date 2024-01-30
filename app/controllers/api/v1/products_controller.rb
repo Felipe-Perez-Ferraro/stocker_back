@@ -15,6 +15,12 @@ class Api::V1::ProductsController < ApplicationController
     elsif params[:price] == 'price_low_to_high'
       products = products.order(price: :asc)
     end
+
+    if params[:created_at] == 'oldest'
+      products = products.order(created_at: :desc)
+    elsif params[:created_at] == 'newest'
+      products = products.order(created_at: :asc)
+    end
     render json: { status: 'success', data: products }, status: :ok
   rescue StandardError => e
     render json: { status: 'error', message: e.message }, status: :internal_server_error  
@@ -52,6 +58,6 @@ class Api::V1::ProductsController < ApplicationController
   private
 
   def products_params
-    params.require(:product).permit(:sku, :name, :category, :label, :quantity, :price)
+    params.require(:product).permit(:sku, :name, :category, :brand, :label, :quantity, :price)
   end
 end
