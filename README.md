@@ -15,6 +15,7 @@
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
   - [🚀 Front End Part ](#-front-end-part-)
+  - [🚀 Video Presentation ](#-video-presentation-)
   - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
@@ -83,6 +84,13 @@ It's an API only RoR project.
 The site has 2 separate repositories, this is the Frontend repository.
 
 Link to the [Front End Repository](https://github.com/Felipe-Perez-Ferraro/stocker_front)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- VIDEO PRESENTATION -->
+
+## 🚀 Project Presentation <a name="video-presentation"></a>
+[Video Presentation](https://www.loom.com/share/e64c0c85ab954b91891febbaa79d29b6?sid=81ff34d7-7916-4119-bcfa-012e962d2a86)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
